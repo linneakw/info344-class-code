@@ -10,7 +10,8 @@ You may want to refer to my [Intro to PHP tutorial](https://info344.ischool.uw.e
 
 In a new PHP script named `warmup.php`:
 - declare a variable and initialize it to a random integer between 1 and 100
-- echo that value, embedding it in the message "your new random value is nnn", using an interpolated string. For example, if the new random number was 50, your message should say "your new random value is 50". You should also embed a newline character so that the next prompt appears on the next line in the terminal.
+- echo that value, embedding it in the message "your new random value is nnn", 
+using an interpolated string. For example, if the new random number was 50, your message should say "your new random value is 50". You should also embed a newline character so that the next prompt appears on the next line in the terminal.
 
 To figure out how to generate a random integer, search for "php random integer" and read what you find.
 
@@ -21,9 +22,13 @@ $ php warmup.php
 
 ## Arrays and Loops
 
-Write a script that builds an ordered array of month names in calendar order, and then iterates the array, echoing each month name. Try to build the array by using the date functions to generate the month names in calendar order, instead of just hardcoding them. 
+Write a script that builds an ordered array of month names in 
+calendar order, and then iterates the array, echoing each month name. 
+Try to build the array by using the date functions to generate the 
+month names in calendar order, instead of just hardcoding them. 
 
-Then sort the month names aphabetically and re-iterate and echo the array. 
+Then sort the month names aphabetically and re-iterate and echo the 
+array. 
 
 ## API Request
 
