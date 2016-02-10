@@ -8,6 +8,23 @@ var should = require('should');
 //our shorten module
 var shorten = require('../lib/shorten');
 
+//BDD write tests first, to test code
+// take every requirement listed, and write a test for each one of those requirements
+describe('shorten module', function() {
+   it('should encode an id to a path', function() {
+      var enc = shorten.encode(99999);
+      should.exist(enc);
+      // test enc variable, tests if not null 
+      enc.length.should.be.above(0);
+   });
+   
+   it('should decode a path back to the same id', function() {
+       var id = 99999;
+       shorten.decode(shorten.encode(id)).should.equal(id);
+   });
+});
+
+/*
 describe('shorten', function() {
     it('must encode an id', function() {
         var enc = shorten.encode(999);
@@ -29,4 +46,4 @@ describe('shorten', function() {
             encodings[enc] = 1;
         }
     });
-});
+});*/

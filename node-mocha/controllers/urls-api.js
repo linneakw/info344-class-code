@@ -8,7 +8,7 @@ module.exports.Router = function(urls) {
     router.post('/urls', function(req, res, next) {        
         urls.insert(req.body.url)
             .then(function(shortUrl) {
-                res.json({shrotUrl: shortUrl});
+                res.json({shortUrl: shortUrl});
             })
             .catch(next);
     });

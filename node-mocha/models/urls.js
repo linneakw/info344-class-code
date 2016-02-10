@@ -1,5 +1,6 @@
 'use strict';
 
+// code that works with db awaay from code that works with http requests
 module.exports.Model = function(cnPool, shorten) {
     return {
         
