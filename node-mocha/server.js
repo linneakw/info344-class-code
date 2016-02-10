@@ -22,7 +22,7 @@ var dbConfig = {
 
 var cnPool = bluebird.promisifyAll(mysql.createPool(dbConfig));
 var urlsModel = urls.Model(cnPool, shorten);
-var urlsApiRouter = urlsApi.Router(urlsModel);
+var urlsApiRouter = urlsApi.Router(urlsModel, API_ROOT);
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
@@ -32,7 +32,25 @@ app.use(bodyParser.json());
 //the returned router with the value of API_ROOT
 app.use(API_ROOT, urlsApiRouter);
 
-
+//route for any short path that is requested from the server
+app.get('/:shortPath', function(req, res, next) {
+    urlsModel.resolve(req.params.shortPath)
+        .then(function(url) {
+            //if it resolves to a URL...
+            if (url) {
+                //redirect the client to that URL
+                res.redirect(url);            
+            }
+            else {
+                //tell the client that it's not
+                //a registered short URL
+                res.status(404)
+                    .type('text/plain')
+                    .send('Sorry, that short url is not yet registered!');
+            }
+        })
+        .catch(next);
+});
 
 app.listen(80, function() {
     console.log('server is listening...');

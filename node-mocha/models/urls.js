@@ -12,23 +12,23 @@ module.exports.Model = function(cnPool, shorten) {
                 });
         },
         
-        get(shortUrl) {
-            var id = shorten.decode(shortUrl);
+        get(shortPath) {
+            var id = shorten.decode(shortPath);
             return cnPool.queryAsync('select id, url from urls where id=?', [id])
                 .then(function(rows) {
                     return rows.length > 0 ? rows[0] : null;
                 });
         },
         
-        resolve(shortUrl) {
-            return this.get(shortUrl)
+        resolve(shortPath) {
+            return this.get(shortPath)
                 .then(function(row) {
                     return row ? row.url : null;
                 });
         },
         
-        remove(shortUrl) {
-            return this.get(shortUrl)
+        remove(shortPath) {
+            return this.get(shortPath)
                 .then(function(row) {
                     if (row) {
                         return cnPool.queryAsync('delete from urls where id=?', [row.id])
