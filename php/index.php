@@ -29,6 +29,5 @@ if (strlen($name) == 0) {
     <!-- ?= // implies echo, enters the result in -->
     <h1>Hello <?= htmlentities($name) ?></h1>
     <!-- html entities any outcome that you output to the page -->
-   
 </body>
 </html>
