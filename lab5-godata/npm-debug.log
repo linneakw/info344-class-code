@@ -1,0 +1,173 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'homebrew' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose config Skipping project config: /Users/linnea/.npmrc. (matches userconfig)
+5 verbose install initial load of /Users/linnea/package.json
+6 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/babel-preset-react/package.json
+7 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/ember/package.json
+8 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/jsdoc/package.json
+9 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/node/package.json
+10 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/tsd/package.json
+11 verbose installManyTop reading scoped package data from /Users/linnea/node_modules/wget/package.json
+12 info package.json node@0.0.0 No description
+13 info package.json node@0.0.0 No repository field.
+14 info package.json node@0.0.0 No license field.
+15 info package.json ember@0.9.8 No license field.
+16 info package.json wget@0.0.1 No license field.
+17 info package.json tsd@0.6.5 No license field.
+18 verbose readDependencies loading dependencies from /Users/linnea/package.json
+19 silly cache add args [ 'homebrew', null ]
+20 verbose cache add spec homebrew
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'homebrew',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'homebrew',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed homebrew@*
+23 verbose addNamed "*" is a valid semver range for homebrew
+24 silly addNameRange { name: 'homebrew', range: '*', hasData: false }
+25 silly mapToRegistry name homebrew
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/homebrew
+29 verbose addNameRange registry:https://registry.npmjs.org/homebrew not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/homebrew
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 10:12:13 AM
+33 verbose request id 21b7723fd8e4002e
+34 verbose etag "ARZPZ5S1AXJ9T8R2LS1B3G8JG"
+35 http request GET https://registry.npmjs.org/homebrew
+36 http 304 https://registry.npmjs.org/homebrew
+37 verbose headers { date: 'Mon, 29 Feb 2016 18:12:13 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   etag: '"ARZPZ5S1AXJ9T8R2LS1B3G8JG"',
+37 verbose headers   age: '18',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sjc3128-SJC',
+37 verbose headers   'x-cache': 'HIT',
+37 verbose headers   'x-cache-hits': '1',
+37 verbose headers   'x-timer': 'S1456769533.148042,VS0,VE0',
+37 verbose headers   vary: 'Accept' }
+38 silly get cb [ 304,
+38 silly get   { date: 'Mon, 29 Feb 2016 18:12:13 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     'cache-control': 'max-age=300',
+38 silly get     etag: '"ARZPZ5S1AXJ9T8R2LS1B3G8JG"',
+38 silly get     age: '18',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-sjc3128-SJC',
+38 silly get     'x-cache': 'HIT',
+38 silly get     'x-cache-hits': '1',
+38 silly get     'x-timer': 'S1456769533.148042,VS0,VE0',
+38 silly get     vary: 'Accept' } ]
+39 verbose etag https://registry.npmjs.org/homebrew from cache
+40 verbose get saving homebrew to /Users/linnea/.npm/registry.npmjs.org/homebrew/.cache.json
+41 silly addNameRange number 2 { name: 'homebrew', range: '*', hasData: true }
+42 silly addNameRange versions [ 'homebrew', [ '0.0.0', '0.0.1', '0.0.2', '0.1.0' ] ]
+43 silly addNamed homebrew@0.1.0
+44 verbose addNamed "0.1.0" is a plain semver version for homebrew
+45 silly cache afterAdd homebrew@0.1.0
+46 verbose afterAdd /Users/linnea/.npm/homebrew/0.1.0/package/package.json not in flight; writing
+47 verbose afterAdd /Users/linnea/.npm/homebrew/0.1.0/package/package.json written
+48 silly install resolved [ { name: 'homebrew',
+48 silly install resolved     version: '0.1.0',
+48 silly install resolved     description: 'The missing package manager for OS X',
+48 silly install resolved     main: 'index.js',
+48 silly install resolved     repository:
+48 silly install resolved      { type: 'git',
+48 silly install resolved        url: 'git+https://github.com/afc163/homebrew.git' },
+48 silly install resolved     scripts: { postinstall: 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' },
+48 silly install resolved     author: { name: 'afc163', email: 'afc163@gmail.com' },
+48 silly install resolved     license: 'ISC',
+48 silly install resolved     gitHead: '3586f725e4618187bcb18d2a8b2f45dd95731943',
+48 silly install resolved     bugs: { url: 'https://github.com/afc163/homebrew/issues' },
+48 silly install resolved     homepage: 'https://github.com/afc163/homebrew',
+48 silly install resolved     _id: 'homebrew@0.1.0',
+48 silly install resolved     _shasum: 'cf898055ed935acf00da696a9078877f27c4ad57',
+48 silly install resolved     _from: 'homebrew@*',
+48 silly install resolved     _npmVersion: '2.5.1',
+48 silly install resolved     _nodeVersion: '0.12.0',
+48 silly install resolved     _npmUser: { name: 'afc163', email: 'afc163@gmail.com' },
+48 silly install resolved     maintainers: [ [Object] ],
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: 'cf898055ed935acf00da696a9078877f27c4ad57',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/homebrew/-/homebrew-0.1.0.tgz' },
+48 silly install resolved     directories: {},
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/homebrew/-/homebrew-0.1.0.tgz',
+48 silly install resolved     readme: 'ERROR: No README data found!' } ]
+49 info install homebrew@0.1.0 into /Users/linnea
+50 info installOne homebrew@0.1.0
+51 verbose installOne of homebrew to /Users/linnea not in flight; installing
+52 verbose lock using /Users/linnea/.npm/_locks/homebrew-1f0efaf93515cedf.lock for /Users/linnea/node_modules/homebrew
+53 silly install write writing homebrew 0.1.0 to /Users/linnea/node_modules/homebrew
+54 verbose unbuild node_modules/homebrew
+55 silly gentlyRm /Users/linnea/node_modules/homebrew is being purged from base /Users/linnea
+56 verbose gentlyRm don't care about contents; nuking /Users/linnea/node_modules/homebrew
+57 verbose tar unpack /Users/linnea/.npm/homebrew/0.1.0/package.tgz
+58 verbose tar unpacking to /Users/linnea/node_modules/homebrew
+59 silly gentlyRm /Users/linnea/node_modules/homebrew is being purged
+60 verbose gentlyRm don't care about contents; nuking /Users/linnea/node_modules/homebrew
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm extractEntry README.md
+64 verbose write writing to /Users/linnea/node_modules/homebrew/package.json
+65 info preinstall homebrew@0.1.0
+66 verbose readDependencies loading dependencies from /Users/linnea/node_modules/homebrew/package.json
+67 verbose readDependencies loading dependencies from /Users/linnea/node_modules/homebrew/package.json
+68 silly install resolved []
+69 verbose about to build /Users/linnea/node_modules/homebrew
+70 info build /Users/linnea/node_modules/homebrew
+71 info linkStuff homebrew@0.1.0
+72 silly linkStuff homebrew@0.1.0 has /Users/linnea/node_modules as its parent node_modules
+73 verbose linkBins homebrew@0.1.0
+74 verbose linkMans homebrew@0.1.0
+75 verbose rebuildBundles homebrew@0.1.0
+76 info install homebrew@0.1.0
+77 info postinstall homebrew@0.1.0
+78 verbose unsafe-perm in lifecycle false
+79 info homebrew@0.1.0 Failed to exec postinstall script
+80 verbose unlock done using /Users/linnea/.npm/_locks/homebrew-1f0efaf93515cedf.lock for /Users/linnea/node_modules/homebrew
+81 verbose stack Error: homebrew@0.1.0 postinstall: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+81 verbose stack Exit status 1
+81 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+81 verbose stack     at emitTwo (events.js:87:13)
+81 verbose stack     at EventEmitter.emit (events.js:172:7)
+81 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+81 verbose stack     at emitTwo (events.js:87:13)
+81 verbose stack     at ChildProcess.emit (events.js:172:7)
+81 verbose stack     at maybeClose (internal/child_process.js:818:16)
+81 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+82 verbose pkgid homebrew@0.1.0
+83 verbose cwd /Users/linnea/go/src/github.com/linneakw/info344-class-code/lab5-godata
+84 error Darwin 15.3.0
+85 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "homebrew"
+86 error node v4.2.2
+87 error npm  v2.14.7
+88 error code ELIFECYCLE
+89 error homebrew@0.1.0 postinstall: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+89 error Exit status 1
+90 error Failed at the homebrew@0.1.0 postinstall script 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'.
+90 error This is most likely a problem with the homebrew package,
+90 error not with npm itself.
+90 error Tell the author that this fails on your system:
+90 error     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+90 error You can get their info via:
+90 error     npm owner ls homebrew
+90 error There is likely additional logging output above.
+91 verbose exit [ 1, true ]
+92 verbose unbuild node_modules/homebrew
+93 info preuninstall homebrew@0.1.0
+94 info uninstall homebrew@0.1.0
+95 verbose unbuild rmStuff homebrew@0.1.0 from /Users/linnea/node_modules
+96 info postuninstall homebrew@0.1.0
+97 silly gentlyRm /Users/linnea/node_modules/homebrew is being purged from base /Users/linnea
+98 verbose gentlyRm don't care about contents; nuking /Users/linnea/node_modules/homebrew
+99 silly vacuum-fs purging /Users/linnea/node_modules/homebrew
+100 silly vacuum-fs quitting because other entries in /Users/linnea/node_modules
